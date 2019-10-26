@@ -1,0 +1,103 @@
+body{
+    font-family: 'Roboto', sans-serif;
+
+    
+
+}
+body{
+background: #3D7EAA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFE47A, #3D7EAA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFE47A, #3D7EAA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+width: 100%;
+}
+h1{
+    background: #2980b2;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    
+}
+ul{
+    /* hide the bullets points of the ul */
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+}
+li{
+    background: white;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+}
+li:nth-child(2){
+    background: #f7f7f7;
+}
+span{
+    background: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    color: white;
+    text-align: center;
+    width:0;
+
+    /* importent makes it fit in size*/
+    display: inline-block;
+
+    /* makes the animation when we hover ovre
+     li makes the 'trash' icon apear nicely */
+    transition: 0.2s linear ;
+
+    /*  */
+    opacity: 0;
+
+
+}
+input{
+    color: #2980b2;
+    font-size: 18px;
+    background-color: #f7f7f7;
+
+    
+    width:100%;
+
+    padding:13px 13px 13px 20px;
+
+    /*when we set  */
+    box-sizing: border-box;
+   
+}
+input:focus{
+    background: #fff;
+    border: 3px solid #2980b2;
+    outline:none ;
+}
+#container{
+    border:2px solid gray;
+    width: 360px;
+    background:#f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0,0, 0.1);
+    /*  center everything
+
+        top and bottom = 0
+        left and right = auto
+    */
+    margin: 150px auto ;
+}
+
+.completed {
+    color:gray;
+    text-decoration: line-through;
+}
+
+.fa-list{
+    float:right;
+}
+
+li:hover span{
+    width: 40px;
+    /*  */
+    opacity: 1.0;
+
+}
